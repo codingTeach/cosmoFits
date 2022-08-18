@@ -8,6 +8,6 @@ export const useFits = defineStore('store', () => {
     }
     return {
         fits,
-        saveFits
+        saveFits,
     }
 })

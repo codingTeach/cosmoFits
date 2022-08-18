@@ -3,7 +3,27 @@
 import * as deployFit from './functions/deployFit'
 import * as deployHeader from './functions/deployHeader'
 import * as changeStretch from './functions/changeStretch'
+import ExportFit from './components/exportFit.vue'
 
+/*
+const getBase64 = (url: string) => {
+  let img = new Image()
+  img.src = url;
+  img.crossOrigin = 'Anonymous';
+
+  let canvas = document.createElement('canvas'),
+  ctx = canvas.getContext('2d');
+
+  ctx.drawImage(img, 0, 0);
+
+  let b64 = canvas.toDataURL('image/png').replace(/^data:image.+;base64,/, '');
+  //console.log(b64);
+
+  return b64;
+}
+
+getBase64("./nasa.jpg")
+*/
 </script>
 
 <template>
@@ -14,6 +34,7 @@ import * as changeStretch from './functions/changeStretch'
   </div>
 
   <div class="flex">
+    <ExportFit></ExportFit>
     <div class="w-1/3">
       <div class="flex flex-col">
         <input type="file" @change="deployFit.default.deployFit">
