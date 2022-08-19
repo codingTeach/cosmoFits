@@ -31,6 +31,7 @@ const deployFit = (e) => {
 
         //   fits.showHeader(true)
         const canvas = document.querySelector('#roi_canvas0')
+        // @ts-ignore
         useFits().imageBase64 = canvas.toDataURL('image/png').replace(/^data:image.+;base64,/, '')
         //console.log(canvas.toDataURL('image/png').replace(/^data:image.+;base64,/, ''));
 
