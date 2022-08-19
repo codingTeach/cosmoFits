@@ -9,6 +9,8 @@ const handleChange = () => {
     return image.value
 }
 
+
+
 </script>
 
 <template>
