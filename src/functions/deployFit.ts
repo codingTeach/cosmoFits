@@ -30,9 +30,10 @@ const deployFit = (e) => {
         useFits().saveFits(fits)
 
         //   fits.showHeader(true)
-    const canvas = document.querySelector('#glass_canvas')
-    console.log(canvas?.outerHTML);
- 
+        const canvas = document.querySelector('#roi_canvas0')
+        useFits().imageBase64 = canvas.toDataURL('image/png').replace(/^data:image.+;base64,/, '')
+        //console.log(canvas.toDataURL('image/png').replace(/^data:image.+;base64,/, ''));
+
 
         //   fits.addMouseHandler(onMouse);
     };
@@ -40,9 +41,9 @@ const deployFit = (e) => {
     reader.readAsArrayBuffer(e.target.files[0]);
     secondReader.readAsDataURL(e.target.files[0])
 
-   
-    };
 
-    export default { deployFit };
+};
+
+export default { deployFit };
 
 
