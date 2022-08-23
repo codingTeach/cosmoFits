@@ -4,7 +4,7 @@
 
 ### Language:
 - 🇬🇧 English
-- 🇲🇽 [Español](./README.es.md)
+- 🇲🇽 [Español](./readme.es.md)
 
 
 ## Install
