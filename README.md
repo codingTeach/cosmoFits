@@ -7,7 +7,7 @@
 
 ### Language:
 - 🇬🇧 English
-- 🇲🇽 [Español](./README.es.md)
+- 🇲🇽 [Español](./readme.es.md)
 
 
 ## Install
@@ -24,7 +24,7 @@ Navigate to the project folder and install the dependencies:
 cd cosmoFit && npm i
 ```
 
-### Run cosmoFits 🔥
+### Run cosmoFits(dev) 🔥
 
 ```
 npm run dev
