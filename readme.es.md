@@ -14,7 +14,7 @@
 git clone https://github.com/codingTeach/cosmoFit
 ```
 
-Dirigete al directorio del proyecto e instala las dependencias:
+### Dirigete al directorio del proyecto e instala las dependencias:
 
 ```
 cd cosmoFit && npm i
