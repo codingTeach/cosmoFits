@@ -9,10 +9,8 @@ const handleChange = () => {
     return image.value
 }
 
-
-
 </script>
 
 <template>
-        <a @click="handleChange" :href="image" download="">Download</a>
+        <a class="export" @click="handleChange" :href="image" download="">Export</a>
 </template>

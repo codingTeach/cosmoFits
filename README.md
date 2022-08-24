@@ -1,13 +1,11 @@
 
-# FrontEnd Developer Branch 🔨
-=======
 # cosmoFits 🪐
 
 ## The cosmoFits project allows the reading and modification of .fts files
 
 ### Language:
 - 🇬🇧 English
-- 🇲🇽 [Español](./README.es.md)
+- 🇲🇽 [Español](./readme.es.md)
 
 
 ## Install
@@ -24,7 +22,7 @@ Navigate to the project folder and install the dependencies:
 cd cosmoFit && npm i
 ```
 
-### Run cosmoFits 🔥
+### Run cosmoFits(dev) 🔥
 
 ```
 npm run dev
