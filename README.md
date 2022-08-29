@@ -22,9 +22,14 @@ Navigate to the project folder and install the dependencies:
 cd cosmoFit && npm i
 ```
 
-### Run cosmoFits(dev) 🔥
+### Run cosmoFits (dev): 🔥
 
 ```
 npm run dev
 ```
 
+### Build
+
+```
+npm run build
+```
