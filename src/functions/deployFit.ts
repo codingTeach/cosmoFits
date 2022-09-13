@@ -1,4 +1,5 @@
 import { useFits } from "../store/store";
+import {getId} from "./getId";
 
 
 //@ts-ignore
@@ -36,8 +37,33 @@ const deployFit = (e) => {
         useFits().imageBase64 = canvas.toDataURL('image/png').replace(/^data:image.+;base64,/, '')
         //console.log(canvas.toDataURL('image/png').replace(/^data:image.+;base64,/, ''));
 
+        let last_mouse_loc: String;
+        const pad = (s: any, n: any) => {
+            s = s.toString();
+            let nadd = n - s.length;
+            for (let i = 0; i < nadd; i++)
+                s = "&nbsp;" + s;
+            return (s);
+        }
 
-        //   fits.addMouseHandler(onMouse);
+        const showMouseLoc = () => {
+            let lid = getId('cursor_loc');
+           
+            if (lid && last_mouse_loc) {
+                
+                let pixel = fits.getPixelAtFITS(last_mouse_loc);
+                lid.innerHTML = "[" + pad(last_mouse_loc.x, 5) + ","
+                    + pad(last_mouse_loc.y, 5) + "] = "
+                    + pad(pixel.toFixed(1), 9);
+            }
+        }
+
+        const  onMouse = (mouseloc: String) => {
+            last_mouse_loc = fits.image2FITS(mouseloc);
+            showMouseLoc();
+        }
+
+        fits.addMouseHandler(onMouse);
     };
 
     reader.readAsArrayBuffer(e.target.files[0]);

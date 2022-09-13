@@ -36,7 +36,7 @@ import ExportFit from './components/exportFit.vue'
           <option value='square'>Square</option>
           <option value='sqrt'>Square root</option>
         </select>
-        <label id='cursor_loc' class='monospaced'>[] </label>
+        <label id='cursor_loc' class='monospaced pt-3'>[] </label>
 
       </div>
       <div>
