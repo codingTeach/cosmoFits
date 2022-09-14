@@ -1,6 +1,7 @@
-# Nuxt 3 Minimal Starter
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+# cosmoFits 🪐
+
+## The cosmoFits project allows the reading and modification of .fts files.
 
 ## Setup
 
@@ -38,5 +39,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
