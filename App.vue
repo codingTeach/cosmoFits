@@ -1,13 +1,28 @@
 <script setup lang="ts">
 
-import { StarIcon } from '@heroicons/vue/24/solid'
+//  import { StarIcon } from '@heroicons/vue/24/solid'
 
 import * as deployFit from './functions/deployFit'
 import * as deployHeader from './functions/deployHeader'
 import * as changeStretch from './functions/changeStretch'
-import ExportFit from './components/exportFit.vue'
+
+
+onMounted(() => {
+  const script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "/fits.js";
+  document.body.appendChild(script);
+})
+onMounted(() => {
+  const script = document.createElement("script");
+  script.type = "stylesheet";
+  script.src = "/index.css";
+  document.body.appendChild(script);
+})
 
 </script>
+
+
 
 <template>
 
@@ -15,7 +30,7 @@ import ExportFit from './components/exportFit.vue'
 
     <h1 class="font-bold text-[70px]">cosmoFits</h1>
     <a href="https://github.com/codingTeach/cosmoFits" target="lang">
-      <StarIcon class="h-14 w-1h-14  text-yellow-400"></StarIcon>
+
     </a>
   </div>
 

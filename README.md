@@ -1,35 +1,42 @@
+# Nuxt 3 Minimal Starter
 
-# cosmoFits 🪐
+Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
-## The cosmoFits project allows the reading and modification of .fts files
+## Setup
 
-### Language:
-- 🇬🇧 English
-- 🇲🇽 [Español](./readme.es.md)
+Make sure to install the dependencies:
 
+```bash
+# yarn
+yarn install
 
-## Install
+# npm
+npm install
 
-### Clone the project:
-
-```
-git clone https://github.com/codingTeach/cosmoFit
-```
-
-Navigate to the project folder and install the dependencies:
-
-```
-cd cosmoFit && npm i
+# pnpm
+pnpm install --shamefully-hoist
 ```
 
-### Run cosmoFits (dev): 🔥
+## Development Server
 
-```
+Start the development server on http://localhost:3000
+
+```bash
 npm run dev
 ```
 
-### Build
+## Production
 
-```
+Build the application for production:
+
+```bash
 npm run build
 ```
+
+Locally preview production build:
+
+```bash
+npm run preview
+```
+
+Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
